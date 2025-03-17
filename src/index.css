@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: vaziri;
+  src: url("./assets/font/Vazir-Medium-FD-WOL.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: vaziri, sans-serif;
+  user-select: none;
+}
+.listItemSidebar{
+    @apply border border-neutral-400  hover:shadow-[-1px_1px_1px_1px_#fff] duration-300  mt-2 p-3 rounded text-white hover:text-[#01afaf]
+}
+.listItemMenu{
+  @apply relative after:absolute after:right-0 after:h-[2px] after:w-0 hover:after:w-full after:transition-all after:bg-white after:top-[49px]
+}
+.buttonCard{
+  @apply bg-[#009899]  w-36 text-white rounded-md px-10 py-2 flex items-center justify-between
+}
+.cardStyle {
+  @apply mx-3 mt-6  flex flex-col overflow-hidden self-start rounded-lg sm:shrink-0 sm:grow sm:basis-0
+}
